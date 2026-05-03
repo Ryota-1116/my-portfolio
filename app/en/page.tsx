@@ -1,19 +1,24 @@
+"use client"
+
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function EnPage() {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div className="min-h-screen bg-white text-gray-900">
 
             {/* Nav */}
             <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-4 z-10">
                 <div className="max-w-4xl mx-auto flex justify-between items-center">
-                    <span className="font-semibold text-gray-900">Ryota Kawamoto</span>
-                    <div className="flex gap-8 text-sm text-gray-500">
+                    <span className="font-semibold text-gray-900 text-sm">Ryota Kawamoto</span>
+                    <Link href="/ja" className="hover:text-gray-900 transition-colors">JA</Link>
+                    <div className="hidden md:flex gap-8 text-sm text-gray-500">
                         <a href="#about" className="hover:text-gray-900 transition-colors">About</a>
                         <a href="#skills" className="hover:text-gray-900 transition-colors">Skills</a>
                         <a href="#works" className="hover:text-gray-900 transition-colors">Works</a>
                         <a href="#contact" className="hover:text-gray-900 transition-colors">Contact</a>
-                        <Link href="/ja" className="hover:text-gray-900 transition-colors">JA</Link>
                     </div>
                 </div>
             </nav>
@@ -21,7 +26,7 @@ export default function EnPage() {
             {/* Hero */}
             <section className="max-w-4xl mx-auto px-6 pt-40 pb-32">
                 <p className="text-blue-600 font-medium mb-4">Aspiring Full Stack Developer</p>
-                <h1 className="text-6xl font-bold tracking-tight mb-6">Ryota Kawamoto</h1>
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">Ryota Kawamoto</h1>
                 <p className="text-gray-500 text-lg mb-8">📍 Vancouver, BC, Canada</p>
                 <div className="flex gap-4">
                     <a href="https://github.com/Ryota-1116" target="_blank" className="bg-gray-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-700 transition-colors">GitHub</a>
@@ -43,7 +48,7 @@ export default function EnPage() {
                 <div className="max-w-4xl mx-auto px-6">
                     <p className="text-blue-600 font-medium mb-2">Skills</p>
                     <h2 className="text-4xl font-bold mb-12">Skills</h2>
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-gray-50 rounded-2xl p-8">
                             <h3 className="font-bold text-gray-900 mb-4">Frontend</h3>
                             <ul className="space-y-2 text-gray-600">
@@ -77,7 +82,7 @@ export default function EnPage() {
                 <div className="max-w-4xl mx-auto px-6">
                     <p className="text-blue-600 font-medium mb-2">Works</p>
                     <h2 className="text-4xl font-bold mb-12">Works</h2>
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white rounded-2xl p-8 border border-gray-100">
                             <h3 className="font-bold text-lg mb-2">Weather App</h3>
                             <p className="text-gray-500 text-sm mb-4">A weather search app using the OpenWeatherMap API</p>
@@ -122,8 +127,8 @@ export default function EnPage() {
                     <p className="text-blue-600 font-medium mb-2">Contact</p>
                     <h2 className="text-4xl font-bold mb-8">Contact</h2>
                     <div className="space-y-2 text-gray-600 mb-8">
-                        <p>GitHub: <a href="https://github.com/Ryota-1116" target="_blank" className="text-blue-600 hover:underline">https://github.com/Ryota-1116</a></p>
-                        <p>Email: ryota.kawamoto16@gmail.com</p>
+                        <p>GitHub: <a href="https://github.com/Ryota-1116" target="_blank" className="text-blue-600 hover:underline">github.com/Ryota-1116</a></p>
+                        <p className="text-sm">Email: ryota.kawamoto16@gmail.com</p>
                     </div>
                 </div>
             </section>

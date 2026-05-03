@@ -7,13 +7,13 @@ export default function JaPage() {
             {/* Nav */}
             <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-4 z-10">
                 <div className="max-w-4xl mx-auto flex justify-between items-center">
-                    <span className="font-semibold text-gray-900">川本 涼太</span>
-                    <div className="flex gap-8 text-sm text-gray-500">
+                    <span className="font-semibold text-gray-900 text-sm">川本 涼太</span>
+                    <Link href="/en" className="hover:text-gray-900 transition-colors">EN</Link>
+                    <div className="hidden md:flex gap-8 text-sm text-gray-500">
                         <a href="#about" className="hover:text-gray-900 transition-colors">About</a>
                         <a href="#skills" className="hover:text-gray-900 transition-colors">Skills</a>
                         <a href="#works" className="hover:text-gray-900 transition-colors">Works</a>
                         <a href="#contact" className="hover:text-gray-900 transition-colors">Contact</a>
-                        <Link href="/en" className="hover:text-gray-900 transition-colors">EN</Link>
                     </div>
                 </div>
             </nav>
@@ -21,7 +21,7 @@ export default function JaPage() {
             {/* Hero */}
             <section className="max-w-4xl mx-auto px-6 pt-40 pb-32">
                 <p className="text-blue-600 font-medium mb-4">フルスタックエンジニア志望</p>
-                <h1 className="text-6xl font-bold tracking-tight mb-6">川本 涼太</h1>
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">川本 涼太</h1>
                 <p className="text-gray-500 text-lg mb-8">📍 バンクーバー, BC, カナダ</p>
                 <div className="flex gap-4">
                     <a href="https://github.com/Ryota-1116" target="_blank" className="bg-gray-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-700 transition-colors">GitHub</a>
@@ -43,7 +43,7 @@ export default function JaPage() {
                 <div className="max-w-4xl mx-auto px-6">
                     <p className="text-blue-600 font-medium mb-2">Skills</p>
                     <h2 className="text-4xl font-bold mb-12">スキル</h2>
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-gray-50 rounded-2xl p-8">
                             <h3 className="font-bold text-gray-900 mb-4">フロントエンド</h3>
                             <ul className="space-y-2 text-gray-600">
@@ -77,7 +77,7 @@ export default function JaPage() {
                 <div className="max-w-4xl mx-auto px-6">
                     <p className="text-blue-600 font-medium mb-2">Works</p>
                     <h2 className="text-4xl font-bold mb-12">制作物</h2>
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-white rounded-2xl p-8 border border-gray-100">
                             <h3 className="font-bold text-lg mb-2">天気アプリ</h3>
                             <p className="text-gray-500 text-sm mb-4">OpenWeatherMap APIを使った天気検索アプリ</p>
@@ -122,8 +122,8 @@ export default function JaPage() {
                     <p className="text-blue-600 font-medium mb-2">Contact</p>
                     <h2 className="text-4xl font-bold mb-8">連絡先</h2>
                     <div className="space-y-2 text-gray-600 mb-8">
-                        <p>GitHub: <a href="https://github.com/Ryota-1116" target="_blank" className="text-blue-600 hover:underline">https://github.com/Ryota-1116</a></p>
-                        <p>Email: ryota.kawamoto16@gmail.com</p>
+                        <p>GitHub: <a href="https://github.com/Ryota-1116" target="_blank" className="text-blue-600 hover:underline">github.com/Ryota-1116</a></p>
+                        <p className="text-sm">Email: ryota.kawamoto16@gmail.com</p>
                     </div>
                 </div>
             </section>
